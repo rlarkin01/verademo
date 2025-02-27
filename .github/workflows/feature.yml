@@ -22,6 +22,7 @@ jobs:
         env:
           SRCCLR_API_TOKEN: ${{ secrets.SRCCLR_API_TOKEN_FED }}
           SRCCLR_API_URL: https://sca-api.veracode.us
+          SRCCLR_REGION: FED
         uses: veracode/veracode-sca@v2.1.12
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
